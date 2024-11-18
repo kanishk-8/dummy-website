@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">Apna kotha</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="booking.html">Book Appointment</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Book an Appointment</h1>
+      <form id="bookingForm">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+          <label for="service">Select Service</label>
+          <select id="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="Plumbing">backshot</option>
+            <option value="Electrical">blowjob</option>
+            <option value="Cleaning">full body</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="service">Select raand</label>
+          <select id="service" required>
+            <option value="" disabled selected>Select a raand</option>
+            <option value="Plumbing">mayur raand</option>
+            <option value="Electrical">Ayush chudatwali</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="date">Preferred Date</label>
+          <input type="date" id="date" required />
+        </div>
+        <div class="form-group">
+          <label for="time">Preferred Time</label>
+          <input type="time" id="time" required />
+        </div>
+        <button type="submit">Book Appointment</button>
+      </form>
+      <div id="confirmation" class="hidden">
+        <h2>Appointment Confirmed!</h2>
+        <p id="confirmationDetails"></p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2024 ServicePro. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
