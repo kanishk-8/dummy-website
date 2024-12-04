@@ -1,61 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="navbar">
-      <div class="logo">Apna kotha</div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="booking.html">Book Appointment</a>
-        <a href="about.html">About</a>
-      </nav>
-    </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Apna Kotha</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="logo">Apna Kotha</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About</a>
+                <a href="booking.html">Book Now</a>
+            </div>
+        </div>
+    </nav>
 
-    <main class="container">
-      <h1>About the Service Professional</h1>
-      <div class="about-section">
-        <img
-          src="img/086d65df-93ec-4b27-a431-e46d3ed523a1.webp"
-          alt="Service Professional"
-          class="profile-img"
-        />
-        <div class="about-content">
-          <h2>Ayush Chudatwali</h2>
-          <p>
-            With over 10 years of experience in full body services, Ayush has
-            built a reputation for reliability, efficiency, and professionalism.
-            Whether it’s backshot or blowjob, Ayush ensures top-notch service
-            tailored to your needs. The one thing that distinguishes Ayush from
-            others is his ability to provide a wide range of services, from
-            backshot to full body at just rs 80. you can book your slot in
-            advance and enjoy handjob free of cost.
-          </p>
-        </div>
-        <img
-          src="img/6bccd65e-265b-411b-9f9a-9a1573cb040c.webp"
-          alt="Service Professional"
-          class="profile-img"
-        />
-        <div class="about-content">
-          <h2>Mayur raand</h2>
-          <p>
-            With over 7 years of experience in home services, mayur has provided
-            the absolute best service in the industry. Whether it’s backshot or
-            blowjob, mayur ensures top-notch service tailored to your needs. The
-            one thing that distinguishes mayur from rest of the raand is his
-            cheap prices. @40 rs per hour.
-          </p>
-        </div>
-      </div>
+    <main>
+        <section class="about-hero">
+            <div class="container">
+                <h1>Welcome to Apna Kotha</h1>
+                <div class="about-content">
+                    <p>Experience premium adult services in a safe and comfortable environment. We take pride in providing the highest quality service with utmost professionalism and discretion.</p>
+                    <ul class="about-features">
+                        <li>Premium Service</li>
+                        <li>100% Satisfaction</li>
+                        <li>Clean Environment</li>
+                        <li>Professional Staff</li>
+                        <li>Discreet Service</li>
+                        <li>Safe Environment</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <div class="container">
+                <h2>Our Elite Team</h2>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="img/086d65df-93ec-4b27-a431-e46d3ed523a1.webp" alt="Ayush Chudatwali">
+                        </div>
+                        <div class="team-info">
+                            <h3>Ayush Chudatwali</h3>
+                            <span class="team-role">Premium Provider</span>
+                            <div class="team-details">
+                                <div class="detail-item">
+                                    <span class="label">Experience</span>
+                                    <span class="value">10+ Years</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="label">Speciality</span>
+                                    <span class="value">Full Body Service</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="label">Rate</span>
+                                    <span class="value">₹80/hour</span>
+                                </div>
+                            </div>
+                            <a href="booking.html" class="book-button">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="img/6bccd65e-265b-411b-9f9a-9a1573cb040c.webp" alt="Mayur Raand">
+                        </div>
+                        <div class="team-info">
+                            <h3>Mayur Raand</h3>
+                            <span class="team-role">Budget Provider</span>
+                            <div class="team-details">
+                                <div class="detail-item">
+                                    <span class="label">Experience</span>
+                                    <span class="value">7+ Years</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="label">Speciality</span>
+                                    <span class="value">Standard Services</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="label">Rate</span>
+                                    <span class="value">₹40/hour</span>
+                                </div>
+                            </div>
+                            <a href="booking.html" class="book-button">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
-      <p>&copy; 2024 ServicePro. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Apna Kotha. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
     </footer>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>

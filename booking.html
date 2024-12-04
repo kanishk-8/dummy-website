@@ -1,64 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Book Appointment</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="navbar">
-      <div class="logo">Apna kotha</div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="booking.html">Book Appointment</a>
-        <a href="about.html">About</a>
-      </nav>
-    </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Service - Apna Kotha</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="logo">Apna Kotha</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/booking.html" class="active">Book Now</a>
+            </div>
+        </div>
+    </nav>
 
-    <main class="container">
-      <h1>Book an Appointment</h1>
-      <form id="bookingForm">
-        <div class="form-group">
-          <label for="name">Your Name</label>
-          <input type="text" id="name" placeholder="Enter your name" required />
-        </div>
-        <div class="form-group">
-          <label for="service">Select Service</label>
-          <select id="service" required>
-            <option value="" disabled selected>Select a service</option>
-            <option value="Plumbing">backshot</option>
-            <option value="Electrical">blowjob</option>
-            <option value="Cleaning">full body</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="service">Select raand</label>
-          <select id="service" required>
-            <option value="" disabled selected>Select a raand</option>
-            <option value="Plumbing">mayur raand</option>
-            <option value="Electrical">Ayush chudatwali</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="date">Preferred Date</label>
-          <input type="date" id="date" required />
-        </div>
-        <div class="form-group">
-          <label for="time">Preferred Time</label>
-          <input type="time" id="time" required />
-        </div>
-        <button type="submit">Book Appointment</button>
-      </form>
-      <div id="confirmation" class="hidden">
-        <h2>Appointment Confirmed!</h2>
-        <p id="confirmationDetails"></p>
-      </div>
-    </main>
+    <div class="form-container">
+        <h1>Book Your Service</h1>
+        <form id="bookingForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="service">Service</label>
+                <select id="service" name="service" required>
+                    <option value="">Select a service</option>
+                    <option value="backshot">Backshot - ₹40</option>
+                    <option value="blowjob">Blowjob - ₹40</option>
+                    <option value="full">Full Body Service - ₹80</option>
+                    <option value="combo">Full Package with Handjob - ₹150</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="provider">Provider</label>
+                <select id="provider" name="provider" required>
+                    <option value="">Select a provider</option>
+                    <option value="ayush">Ayush Chudatwali - Premium (₹80/hr)</option>
+                    <option value="mayur">Mayur Raand - Budget (₹40/hr)</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="notes">Additional Notes</label>
+                <textarea id="notes" name="notes" rows="4"></textarea>
+            </div>
+            
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
 
     <footer class="footer">
-      <p>&copy; 2024 ServicePro. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Apna Kotha. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
     </footer>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>

@@ -1,31 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apna kotha</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="navbar">
-      <div class="logo">Apna kotha</div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="booking.html">Book Appointment</a>
-        <a href="about.html">About</a>
-      </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apna Kotha - Premium Adult Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+        .btn-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="logo">Apna Kotha</a>
+            <div class="nav-links">
+                <a href="/" class="active">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/booking.html">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Premium Adult Services</h1>
+            <p class="hero-text">Experience luxury and comfort with our professional services</p>
+            <a href="/booking.html" class="cta-button">Book Now</a>
+        </div>
     </header>
 
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Welcome to Apna kotha</h1>
-        <p>Your trusted platform for hassle-free service bookings.</p>
-        <a href="booking.html" class="btn">Book Now</a>
-      </div>
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Premium Services</h3>
+                    <p>Professional and experienced service providers</p>
+                    <span class="price">Starting ₹40</span>
+                </div>
+                <div class="feature-card">
+                    <h3>Safe & Discreet</h3>
+                    <p>100% confidential and secure booking process</p>
+                </div>
+                <div class="feature-card">
+                    <h3>24/7 Available</h3>
+                    <p>Book your preferred service anytime</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+<!-- 
+    <section class="providers">
+        <div class="container">
+            <h2>Our Top Providers</h2>
+            <div class="providers-grid">
+                <div class="provider-card">
+                    <div class="provider-info">
+                        <h3>Ayush Chudatwali</h3>
+                        <p>Premium Provider</p>
+                        <span class="rate">₹80/hour</span>
+                        <a href="/booking.html" class="book-btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="provider-card">
+                    <div class="provider-info">
+                        <h3>Mayur Raand</h3>
+                        <p>Budget Friendly</p>
+                        <span class="rate">₹40/hour</span>
+                        <a href="/booking.html" class="book-btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="reviews-section">
+        <div class="reviews-container">
+            <div class="reviews-header">
+                <h2>What Our Clients Say</h2>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">
+                            <img src="img/user1.png" alt="Client">
+                        </div>
+                        <div class="reviewer-info">
+                            <h4>Manas</h4>
+                            <span class="date">2 days ago</span>
+                        </div>
+                    </div>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                    </div>
+                    <p class="review-text">Rands were slightly loose, but very budget friendly, ayush chuttadwal offered free service after his experience.</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">
+                            <img src="img/user2.png" alt="Client">
+                        </div>
+                        <div class="reviewer-info">
+                            <h4>Abhishek</h4>
+                            <span class="date">1 week ago</span>
+                        </div>
+                    </div>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">☆</span>
+                    </div>
+                    <p class="review-text">Great value for money with Mayur. The service was exactly as described. Very satisfied with the experience.</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">
+                            <img src="img/user3.png" alt="Client">
+                        </div>
+                        <div class="reviewer-info">
+                            <h4>Kanishk</h4>
+                            <span class="date">2 weeks ago</span>
+                        </div>
+                    </div>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="review-text">The full package service was incredible! Clean environment, professional staff, and excellent service. Highly recommended!</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer class="footer">
-      <p>&copy; 2024 ServicePro. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Apna Kotha. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
     </footer>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
